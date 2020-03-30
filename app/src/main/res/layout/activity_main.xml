@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#673AB7"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/time_display"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="145dp"
+            android:fontFamily="@font/basic"
+            android:text="Total Time:"
+            android:textColor="#FF9800"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/sw_timer"
+            android:layout_width="393dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="195dp"
+            android:text="00:00:00"
+            android:textSize="80sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/pause_btn"
+            android:layout_width="78dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/pause_design" />
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="400dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/reset_design" />
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="73dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/start_design" />
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
